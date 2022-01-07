@@ -19,8 +19,9 @@ from polls import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-
     # shkim
     path('polls/', include('polls.urls')),
+    path('books/', include('books.urls')),
+
 ]
 
