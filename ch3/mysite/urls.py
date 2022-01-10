@@ -22,6 +22,5 @@ urlpatterns = [
     # shkim
     path('polls/', include('polls.urls')),
     path('books/', include('books.urls')),
-
 ]
 

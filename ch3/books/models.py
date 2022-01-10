@@ -25,4 +25,4 @@ class publisher(models.Model):
     website = models.URLField()
 
     def __str__(self):
-        return self.names
+        return self.name

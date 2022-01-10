@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
     <link rel="stylesheet" href="{% static 'admin/css/base.css' %}" />
-    <title>{%block title%}My Amazing Site{% endblock %}</title>
+    <title>{% block title %}My Amazing Site{% endblock %}</title>
 </head>
+
 <body>
     <div id="sidebar">
         {% block sidebar %}
@@ -16,9 +16,9 @@
         {% endblock %}
         <br>
     </div>
-    
+
     <div id="content">
-        {% block content%}{% endblock %}
+        {% block content %}{% endblock %}
     </div>
 </body>
 </html>
